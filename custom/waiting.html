@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- X-CSRF token for authenticating api calls -->
+
+
+
+    <title>Learn, Code and Share on Tutorialzine</title>
+
+
+
+    <link rel="shortcut icon" href="https://freecoder.in/img/favicon.png">
+
+
+
+    <!-- Fonts -->
+
+    <link href="css/font.css" rel="stylesheet">
+
+
+
+    <!-- Icon -->
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        
+
+    <!-- Styles -->
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    
+
+    <link rel="stylesheet" href="/css/toastr.min.css" />
+
+
+
+    <link href="/css/style.css" rel="stylesheet">
+
+
+
+    <!-- Custome CSS!-->
+
+    <style type="text/css">
+
+        .custom-menu{
+
+            color: #fff!important;
+
+        }
+
+        .custom{
+
+            background-color: #68829E!important;
+
+        }
+
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+
+    <div class="page__wrapper page--landing">
+
+
+
+        <header class="header--main animate-search no-background no-background-xs">
+
+
+
+            <div class="container-fluid">
+
+                <nav class="nav--main">
+
+                    <div class="nav__logo">
+
+                        <a href="/">
+
+                    free<span>coder</span>
+
+                </a>
+
+                    </div>
+
+
+
+                    <ul class="nav__items nav__items--right" id="login__signup">
+
+                        <li class="nav__item">
+
+                            <a href="#search" class="search-trigger"><i class="fas fa-search"></i>
+
+                        </a>
+
+                        </li>
+
+                    </ul>
+
+
+
+                    <ul class="nav__items nav__items--left" id="header">
+
+
+
+                    </ul>
+
+                </nav>
+
+                <!-- .nav--main -->
+
+            </div>
+
+
+
+            <a href="#0" class="nav-trigger"><span class="fas fa-bars"></span></a>
+
+
+
+            <div id="search" class="main-search">
+
+            </div>
+
+            <!-- .main-search -->
+
+        </header>
+
+
+
+        <div class="cover-layer"></div>
+
+        <!-- cover main content when search form is open -->
+
+
+
+        <main class="main-content" id="mains">
+
+        
+
+            <section>
+
+                <div class="hero hero--articles">
+
+                    <div class="container-fluid">
+
+                        <div class="hero-content">
+
+                            <div class="row no-margin">
+
+                                <div class="col-md-5">
+
+                                    <h2>Welcome to <strong>Freecoder</strong>!</h2>
+
+                                    <p>We are a community of talented developers who learn together. We have an ever-growing library of high-quality Programming Codes and articles that you can read / download / use completely for free!</p>
+
+                                    <div class="stack-sm">
+
+                                        <a href="/login/signup.html" class="btn btn-default">
+
+                                            <span>Register</span>
+
+                                        </a>
+
+                                        <span>or</span>
+
+                                        <a href="/article.php" class="white" style="text-transform: capitalize;border-bottom: 1px solid white;">
+
+                                            browse content
+
+                                        </a>
+
+                                    </div>
+
+                                </div><br>
+
+
+
+                                <div class="col-md-6 col-md-offset-1 ">
+
+                                    <div class="browser">
+
+                                        <div class="bar">
+
+                                            <div class="buttons"></div>
+
+                                            <div class="buttons"></div>
+
+                                            <div class="buttons"></div>
+
+                                            <div class="search-bar"></div>
+
+                                        </div>
+
+                                        <div class="content-mask" style="margin-top:50px!important">
+
+                                            <div id="article-animation" class="content">
+
+                                                <div class="article-mockup-container hidden-sm hidden-xs">
+
+                                                    <div class="article-mockup">
+
+                                                        <div class="image-mockup">
+
+                                                            <span class="fas fa-layer-group"></span>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="article-mockup-container" style="width: 60%!important;">
+
+                                                    <div class="" style="color:#336B87">
+
+                                                        <h1 class="text-center">
+
+                                                            Sorry for<br>Inconvenience
+
+                                                        </h1>
+
+                                                    </div><br>
+
+                                                    <div class="" style="color:grey!important">
+
+                                                        <h3 class="text-center">
+
+                                                            This feature is Coming Soon.
+
+                                                        </h3>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+            </section>
+
+        </main>
+
+
+
+        <footer>
+
+        </footer>
+
+
+
+    </div>
+
+
+
+    <!-- JavaScripts -->
+
+    <script src="/js/jquery.min.js"></script>
+
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+
+    <script src="/js/highlight.min.js"></script>
+
+
+
+    <script src="/js/toastr.min.js"></script>
+
+    
+
+    <script src="/js/bundle-c099f8dd47.js"></script>
+
+<script type="text/javascript">
+
+    $('#header').load('/header.html');
+
+    $('footer').load('/footer.html');
+
+//Search Content
+
+    $('.main-search').html(' <div class="container-fluid"> <form id="search-form-top" class="form__search" action="#" method="GET"> <input type="search" name="query" placeholder="Search..." value="" autocomplete="off" required><!-- <select name="type" type="hidden"> <option value="all" selected>All</option> </select> --> </form> <div class="search-suggestions"> </div><a href="#0" class="close text-replace">Close Form</a> </div>');
+
+//Login and Signup Buttons
+
+    $('#login__signup').append(' <li id="login" class="nav__item"> <a href="/custom/waiting.html"> Login </a> </li><li id="register" class="nav__item"> <a href="/custom/waiting.html"> <span class="btn btn-default">Register</span> </a> </li>');
+
+
+
+</script>
+
+</body>
+
+
+
+</html>

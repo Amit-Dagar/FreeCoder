@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <title>Programming Meme's - freecoder</title>
+    <link href="" rel="stylesheet" />
+
+    <meta name="description" content="We post programming meme's related to manay of programming languages and based on entities. we provide best programming meme's ever. " />
+    <meta name="keywords" content="Best programming meme's, programming meme's, freecoder meme's programming meme, best meme, c prpgramming meme, best meme ever, best java meme, meme, meme's, google meme's, facebook meme's, free programming meme's, freecoder, free coder, coding meme, top 20 programming meme's" />
+    <link href="css/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/toastr.min.css" />
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="/css/ninja-slider.css" rel="stylesheet" />
+    <script src="/js/ninja-slider.js" type="text/javascript"></script>
+    <script>
+        function lightbox(idx) {
+            var ninjaSldr = document.getElementById("ninja-slider");
+            ninjaSldr.parentNode.style.display = "block";
+
+            nslider.init(idx);
+
+            var fsBtn = document.getElementById("fsBtn");
+            fsBtn.click();
+        }
+
+        function fsIconClick(isFullscreen, ninjaSldr) { //fsIconClick is the default event handler of the fullscreen button
+            if (isFullscreen) {
+                ninjaSldr.parentNode.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        .gallery img {
+            width: 179px;
+            cursor: pointer;
+            margin-top: 4px;
+        }
+        
+        .custom-menu {
+            color: #fff!important;
+        }
+        
+        .custom {
+            background-color: #68829E!important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="page__wrapper page--landing">
+
+        <header class="header--main animate-search no-background no-background-xs">
+
+            <div class="container-fluid">
+
+                <nav class="nav--main">
+
+                    <div class="nav__logo">
+
+                        <a href="/">
+
+                    free<span>coder</span>
+
+                </a>
+
+                    </div>
+
+                    <ul class="nav__items nav__items--right" id="login__signup">
+
+                        <li class="nav__item">
+
+                            <a href="#" class="search-trigger"><i class="fas fa-search"></i>
+
+                        </a>
+
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav__items nav__items--left" id="header">
+
+                    </ul>
+
+                </nav>
+
+                <!-- .nav--main -->
+
+            </div>
+
+            <a href="#0" class="nav-trigger"><span class="fas fa-bars"></span></a>
+
+            <div id="search" class="main-search">
+                <div class="container-fluid">
+                    <form id="search-form-top" action="/search.html" method="GET" class="form__search">
+                        <input type="search" name="search_key" placeholder="Search..." value="" autocomplete="off" required>
+                    </form>
+                    <div class="search-suggestions"> </div><a href="#0" class="close text-replace">Close Form</a>
+                </div>
+            </div>
+
+            <!-- .main-search -->
+
+        </header>
+
+        <div class="cover-layer"></div>
+
+        <!-- cover main content when search form is open -->
+
+        <br>
+
+        <br>
+
+        <main class="main-content">
+
+            <div class="content-wrapper">
+
+                <div class="container-fluid articles">
+
+                    <div class="row">
+
+                        <div class="section-header">
+
+                            <h1><h2>Programming Meme's</h2></h1>
+
+                        </div>
+                        <div id="article_data">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+        <div id="">
+            <div style="display:none;">
+                <div id="ninja-slider">
+                    <div class="slider-inner">
+                        <ul id="meme">
+                        </ul>
+                        <div id="fsBtn" class="fs-icon" title="Expand/Close"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+
+    </div>
+    <script src="/js/crousal.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/highlight.min.js"></script>
+
+    <script src="js/toastr.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/bundle-c099f8dd47.js"></script>
+    <script type="text/javascript">
+        loadPage();
+function loadPage()
+
+            {
+                toastr["info"]("<i class='fas fa-spinner fa-spin'></i> Loading...")
+                $('#article_data').empty();
+
+                $.ajax({
+
+                    url: 'api/articles.php?meme=0',
+
+                    type: 'POST',
+
+                    dataType: 'json',
+
+                    //  data : 'uname='+uname+'&pass='+pass,
+
+                    success: function(data) {
+
+                        for (i = 0; i < data.length; i++)
+                        {
+                            $('#article_data').append('<div class="col-md-4 col-sm-6"> <article class="article--small" itemscope itemtype="http://schema.org/http://schema.org/blogPost"> <a href="#" onclick="lightbox('+i+')"> <div class="article__image" style="background-image: url(/wm-admin/meme/' + data[i].meme + ');background-size:100% 100%;""> </div></a></article> </div>');
+                            $('#meme').append(' <li> <a class="ns-img" href="/wm-admin/meme/' + data[i].meme + '"></a> <div class="caption"></li>');
+                        }
+
+                    }
+
+                });
+
+                function date(datetime)
+
+                {
+
+                    var d = new Date(datetime);
+
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+                    var date = d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+
+                    return date;
+
+                }
+
+                toastr.clear()
+
+            }
+
+            var canonical = window.location.href;
+            $("link[rel=canonical").attr("href", canonical);
+    </script>
+</body>
+
+</html>

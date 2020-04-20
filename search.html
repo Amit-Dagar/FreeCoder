@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Programming Articles - freecoder</title>
+    <link rel="shortcut icon" href="https://freecoder.in/img/favicon.png">
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/toastr.min.css" />
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+        .custom-menu {
+            color: #fff!important
+        }
+        
+        .custom {
+            background-color: #68829E!important
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page__wrapper page--landing">
+        <header class="header--main animate-search no-background no-background-xs">
+            <div class="container-fluid">
+                <nav class="nav--main">
+                    <div class="nav__logo"><a href="/">free<span>coder</span></a></div>
+                    <ul class="nav__items nav__items--right" id="login__signup">
+                        <li class="nav__item"><a href="#" class="search-trigger"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                    <ul class="nav__items nav__items--left" id="header"></ul>
+                </nav>
+            </div><a href="#0" class="nav-trigger"><span class="fas fa-bars"></span></a>
+            <div id="search" class="main-search">
+                <div class="container-fluid">
+                    <form id="search-form-top" action="/search.html" method="GET" class="form__search">
+                        <input type="search" name="search_key" placeholder="Search..." value="" autocomplete="off" required>
+                    </form>
+                    <div class="search-suggestions"></div><a href="#0" class="close text-replace">Close Form</a></div>
+            </div>
+        </header>
+        <div class="cover-layer"></div>
+        <br>
+        <br>
+        <br>
+        <main class="main-content">
+            <div class="content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="search">
+                                <form id="search-form" class="form-inline" method="GET">
+                                    <input class="form-control" type="search" name="query" placeholder="Search..." value="" autocomplete="off" required>
+                                    <button type="submit" class="btn btn-primary hidden-xs"><span id="submit">search</span></button>
+                                    <button type="submit" class="btn-icon fas fa-search hidden-sm hidden-md hidden-lg"></button>
+                                </form>
+                            </div>
+                            <div class="section section--search">
+                                <div class="tabs__container">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"> <a href="#" aria-controls="articles" role="tab"> Articles </a></ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="articles">
+                                            <ul class="list-group" id="search_content"></ul>
+                                            <div class="pagination__container"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/highlight.min.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bundle-c099f8dd47.js"></script>
+    <script type="text/javascript">
+        var getUrlParameter = function(e) {
+                var a, t, i = window.location.search.substring(1).split("&");
+                for (t = 0; t < i.length; t++)
+                    if ((a = i[t].split("="))[0] === e) return void 0 === a[1] || decodeURIComponent(a[1])
+            },
+            callback = getUrlParameter("search_key");
+
+        function search_page(e) {
+            $("#search_content").empty(), toastr.info("<i class='fas fa-spinner fa-spin'></i> Loading..");
+            var a = 0;
+            $.ajax({
+                url: "api/articles.php?search_page=" + e,
+                type: "POST",
+                dataType: "json",
+                success: function(e) {
+                    if ("error" == e[a].title) $("#search_content").html("<li>Sorry, we did not find anything.</li>");
+                    else
+                        for (a = 0; a < e.length; a++) $("#search_content").append('<li> <a href="/show-article.php?article=' + e[a].search_key + '" class="list-group-item"> <div class="list__left"> <div class="image-wrapper"> <div class="article__image" style="background-image: url(/api/article_cover_thumbs/' + e[a].article_image + ')"></div></div></div><div class="list__right"> <div class="article__header"> <h4 class="list-group-item-heading">' + e[a].title + "</h4> <p> " + e[a].meta_description + " </p></div></div></a> </li>");
+                    $("#submit").text("Search"), $("button").removeAttr("disabled")
+                }
+            }), toastr.clear()
+        }
+        null == callback || search_page(callback), $(function() {
+            $("form").on("submit", function(e) {
+                e.preventDefault(), $("#submit").text("Searching..."), search_page($("input[name=query]").val())
+            })
+        });
+    </script>
+</body>
+
+</html>

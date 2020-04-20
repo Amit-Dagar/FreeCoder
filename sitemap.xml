@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://freecoder.in/</loc>
+  <lastmod>2019-01-25T08:33:30+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/article.php</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=java-simple-program</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://freecoder.in/show-article.php?article=basics-of-r-programming</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=maxwell-boltzmann-distribution-r</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=stochastic-process-r</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=square-root-in-java</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=java-program-with-multiple-classes</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=command-line-argument-java</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=laplace-transformation-or-theorm</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=pass-integer-number-through-argument-in-java</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=sum-of-digits-of-a-number-in-java</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=factorial-of-a-number-using-recursion-in-java</loc>
+  <lastmod>2019-01-25T08:32:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=calling-a-non-static-function-in-java</loc>
+  <lastmod>2019-01-25T08:35:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://freecoder.in/show-article.php?article=decision-making-in-r-programming</loc>
+  <lastmod>2019-01-25T08:30:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=create-print-add-subtract-multiply-and-divide-two-vectors-in-r</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/show-article.php?article=pass-a-character-array-to-a-function</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://freecoder.in/article.php?article_type=php</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/article.php?article_type=javascript</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://freecoder.in/article.php?article_type=css</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/article.php?article_type=sql</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://freecoder.in/article.php?article_type=c</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/article.php?article_type=r</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://freecoder.in/article.php?article_type=python</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/article.php?article_type=java</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://freecoder.in/article.php?article_type=others</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/login/index.html</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/login/forgot.html</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/login/signup.html</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freecoder.in/login/confirm.html</loc>
+  <lastmod>2019-01-25T08:37:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+</urlset>

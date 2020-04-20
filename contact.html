@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- X-CSRF token for authenticating api calls -->
+
+    <title>Contact us - freecoder</title>
+
+    <link rel="shortcut icon" href="https://freecoder.in/img/favicon.png">
+
+    <meta name="title" content="Programming Articles - freecoder">
+
+    <meta name="description" content="Contact our team for any purpose related to programming languages and freecoder servides or any sponsored purpose.">
+
+    <meta name="keywords" content="Ajax, Jquery, JavaScript, JS, MySQL, SQL, C, CPP, R, R language, JAVA, Core  JAVA, PHP, contact freecoder team, freecoder team, freecoder contact, Python, freecoder, free codes, free coder, free programming codes, free projects, c programs,">
+    <link rel="canonical" href="">
+    <!-- Fonts -->
+
+    <link href="css/font.css" rel="stylesheet">
+
+    <!-- Icon -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Styles -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/toastr.min.css" />
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custome CSS!-->
+
+    <style type="text/css">
+        .custom-menu {
+            color: #fff!important;
+        }
+        
+        .custom {
+            background-color: #68829E!important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="page__wrapper page--landing">
+
+        <header class="header--main animate-search no-background no-background-xs">
+
+            <div class="container-fluid">
+
+                <nav class="nav--main">
+
+                    <div class="nav__logo">
+
+                        <a href="/">
+
+                    free<span>coder</span>
+
+                </a>
+
+                    </div>
+
+                    <ul class="nav__items nav__items--right" id="login__signup">
+
+                        <li class="nav__item">
+
+                            <a href="#" class="search-trigger"><i class="fas fa-search"></i>
+
+                        </a>
+
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav__items nav__items--left" id="header">
+
+                    </ul>
+
+                </nav>
+
+                <!-- .nav--main -->
+
+            </div>
+
+            <a href="#0" class="nav-trigger"><span class="fas fa-bars"></span></a>
+
+            <div id="search" class="main-search">
+                <div class="container-fluid">
+                    <form id="search-form-top" action="/search.html" method="GET" class="form__search">
+                        <input type="search" name="search_key" placeholder="Search..." value="" autocomplete="off" required>
+                    </form>
+                    <div class="search-suggestions"> </div><a href="#0" class="close text-replace">Close Form</a>
+                </div>
+            </div>
+
+            <!-- .main-search -->
+
+        </header>
+
+        <div class="cover-layer"></div>
+
+        <!-- cover main content when search form is open -->
+
+        <br>
+
+        <br>
+
+        <br>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+
+                            <div class="alert" hidden>
+                                <div class="loader loader-page" hidden>
+                                    <div class="loader-container">
+                                        <div class="spinner">
+                                            <div class="checkmark draw"></div>
+                                            <div class="cross draw"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message"></div>
+                            </div>
+
+                            <div class="section">
+                                <div class="panel-heading">
+                                    <i class="fas fa-envelope icon-form"></i>
+                                    <h2>
+                                        Contact Us
+                                    </h2>
+                                </div>
+                                <div id="alert">
+                                    
+                                </div>
+                                <div class="panel-body">
+
+                                    <form id="form" class="form-horizontal form--flex" role="form" method="POST" action="/api/contact.php">
+                                        <div class="form-group">
+
+                                            <div class="controls">
+                                                <input id="email" type="email" class="form-control" name="email" value="" required>
+                                                <label for="email">Email</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group">
+
+                                            <div class="controls">
+                                                <textarea id="text" type="text" class="form-control" name="message" required></textarea>
+                                                <label for="text">Your message</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="g-recaptcha" data-sitekey="6LdVK4sUAAAAABEmPOLY6AAhrZQvCXq8W2UkdJM-"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-6 col-md-offset-3">
+                                                <button id="submit" class="btn btn-primary" type="submit">Send</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+    <!-- JavaScripts -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/highlight.min.js"></script>
+
+    <script src="js/toastr.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/bundle-c099f8dd47.js"></script>
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script type="text/javascript">
+$("#submit").click(function(){
+    document.getElementById('submit').disabled = false;
+});
+        $(function() {
+
+            $('#form').on('submit', function(e) {
+                
+                e.preventDefault();
+                var cap=$("#g-recaptcha-response").val();
+                if(cap!='')
+                {
+                    $.ajax({
+
+                        url: '/api/contact.php?email='+$("#email").val()+'&message='+$("#text").val(),
+
+                        type: 'GET',
+
+                        dataType: 'text',
+
+                        success: function(data) {
+                            if(data==1)
+                            {
+                                $('#alert').html('<label id="alert" class="border" style="text-align: center;color:#339900;padding:10px;border: .2rem solid #339900 !important;margin-top:5px;border-radius:2rem">Message send successfully.</label>');
+                            }
+                            else
+                            {
+                                $('#alert').html('<label id="alert" class="border" style="text-align: center;color:#cc3300;padding:10px;border: .2rem solid #cc3300 !important;margin-top:5px;border-radius:2rem">Sorry! something went wrong.</label>');
+                            }
+                        }
+
+                    });
+                }
+                else
+                {
+                    
+                    $('#alert').html('<label id="alert" class="border" style="text-align: center;color:#cc3300;padding:10px;border: .2rem solid #cc3300 !important;margin-top:5px;border-radius:2rem">Please check reCaptcha.</label>');
+
+                }
+
+            });
+
+        });
+   </script>
+</body>
+
+</html>

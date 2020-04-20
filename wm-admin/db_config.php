@@ -1,0 +1,2 @@
+<?phpinclude('../api/config.php');
+?>
